@@ -151,6 +151,7 @@ Describe running an app in the cloud by working through a concrete example using
 
 
 \subsection{Commodity Infrastructure}
+
 \begin{frame}{Commodity Infrastructure}
   \begin{block}{What do I mean by Commodity Infrastructure?}
     \begin{itemize}
@@ -160,6 +161,8 @@ Describe running an app in the cloud by working through a concrete example using
     \end{itemize}
   \end{block}
 \end{frame}
+
+
 \begin{frame}{Isn't that just a VPS with a new name?}
 \pause
 \begin{block}{Amazon, Rackspace Cloud, etc - compute units resemble VPS}
@@ -216,7 +219,36 @@ Describe running an app in the cloud by working through a concrete example using
 
 \subsection{Components}
 
-\begin{frame}{Make Titles Informative.}
+\begin{frame}{Components}
+  \begin{columns}[t]
+    \begin{column}{4cm}
+      \begin{itemize}
+      \uncover<1->{\item Ruby on Rails}
+      \uncover<2->{\item Capistrano}
+      \uncover<3->{\item Chef}
+      \uncover<4->{\item Amazon Web Services}
+      \end{itemize}
+    \end{column}
+    \begin{column}{6cm}
+      \only<1-4>{\begin{itemize}}
+      \only<1>{\item Web Application Framework}
+      \only<1>{\item Model-View-Controller Architecture}
+      \only<1>{\item RubyGems package manager}
+      \only<2>{\item Deployment Automation}
+      \only<2>{\item Deploys code and database changes}
+      \only<2>{\item Can be used for other remote admin tasks}
+      \only<3>{\item Configuration Management}
+      \only<3>{\item Mutual authentication and encryption}
+      \only<3>{\item Easily configure applications that require knowledge about your entire infrastructure}
+      \only<4>{\item Infrastructure web services platform in the cloud}
+      \only<4>{\begin{itemize}}
+      \only<4>{\item EC2 - Elastic Compute Cloud}
+      \only<4>{\item S3 - Simple Storage Service}
+      \only<4>{\item RDS - Relational Database Service}
+      \only<4>{\end{itemize}}
+      \only<1-4>{\end{itemize}}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Make Titles Informative.}
