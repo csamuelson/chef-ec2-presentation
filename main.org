@@ -1,0 +1,61 @@
+* Running Rails Apps in the Cloud
+** Introduction
+*** Introduction
+**** Who - Me
+**** Why
+***** To describe running an app with cloud infrastructure by working through a concrete example
+*** Commodity Infrastructure
+**** Isn't this just a VPS with a cool name?
+     * Some of the providers offer compute capacity in the cloud
+       * Amazon, Rackspace Cloud and others offer computing in the cloud that is very similar to a VPS except:
+     	 * No setup fees
+	 * No long-term contracts
+	 * Pay for resource use in very granular ways (by the hour, instead of by the month)
+	 * Increase of decrease usage very quickly, and in an automated fashion.
+       * Google and Salesforce are good examples of companies that offer computing resources that are very dis-similar to a tradtional VPS
+	 * No software setup
+	 * Many common tasks are services (image processing, data storage, etc)
+	 * No need to manage capacity (ie. turn up or down servers), that is taken care of for you
+     * You could use something like Rackspace Cloud or Amazon Web Services just like a tradional VPS, but you would be missing the point!
+*** Not just about the hardware...
+**** Introduce Configuration Management and Deployment Automation
+     * Q. Now that you have freely scalable resources what are you going to do with them?
+     * A. Configuration Management, and Deployment Automation to the rescue!
+**** Configuration Management
+***** No need to maintain 'Golden Image'
+***** Keep software packages up to date more easily
+***** Know that you will be able to turn up a new server at any time
+**** Deployment Automation
+***** Manage software releases
+***** Know that your software deployment is documented
+***** Know that you will be able to turn up a new server at any time
+** Example Stack
+*** Components
+**** Ruby on Rails
+**** Capistrano
+**** Chef
+**** Amazon Web Services
+***** EC2
+***** S3
+***** RDS
+*** Setup
+**** Ruby on Rails App
+***** Assuming everyone can handle this
+**** Amazon Web Services
+***** EC2
+***** S3
+***** RDS
+**** Chef
+***** Opscode account
+***** Git Repository
+***** Cookbook
+**** Capistrano
+***** Assuming everyone can handle this
+*** Deploy
+**** Release Cycle Complete
+**** Resource roll-out
+**** App Deployment
+** Summary
+*** How it fits together
+*** Where to go from here
+*** Questions?
